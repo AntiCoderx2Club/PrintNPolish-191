@@ -1,0 +1,14 @@
+.Staff_Header {
+    left: 42px;
+    top: 25px;
+    position: absolute;
+    overflow: visible;
+    width: 268px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Times New Roman;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 1);
+}
