@@ -36,18 +36,22 @@
       color: black;
 }
   
-.Lisas_Nails {
-          /*Box code*/
+.Lisas_Nails p{
+          /*Box variables*/
           width: 300px;
-          height: 300px;
+          height: 250px;
           border: 2px solid #000;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          /*Moves the box*/
           left: 150px;
           top: 200px;
           position: absolute;
           overflow: visible;
           width: 268px;
           white-space: nowrap;
-          text-align: center;
+          /*Font variables*/
           font-family: Times New Roman;
           font-style: italic;
           font-weight: normal;
