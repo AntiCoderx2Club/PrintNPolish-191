@@ -10,5 +10,63 @@
     font-style: italic;
     font-weight: normal;
     font-size: 50px;
-    color: rgba(0, 0, 0, 1);
+    color: rgba(112, 112, 112, 1);
+}
+
+p.Meet_Staff_Description {
+    border: .5px;
+    border-style: solid;
+    border-color: rgba(112, 112, 112, 1);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 2em;
+    left: 236px;
+    top: 147px;
+    position: absolute;
+    overflow: visible;
+    width: 902px;
+    height: 27px;
+    line-height: 23px;
+    margin-top: -1.5px;
+    text-align: left;
+    font-style: italic;
+    font-family: Segoe UI;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(112, 112, 112, 1);
+    opacity: 0.75;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.left,
+.right,
+.center {
+    border-radius: 0.5em;
+    float: left;
+    width: 33%;
+    color: white;
+    padding: 10px;
+    height: 500px;
+    text-align: center;
+}
+
+.left {
+    background-color: #e9c8c2;
+}
+
+.right {
+    background-color: #e9c8c2;
+}
+
+.center {
+    background-color: #e9c8c2;
+}
+
+.container:after {
+    clear: both;
 }
