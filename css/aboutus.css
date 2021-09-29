@@ -52,7 +52,7 @@ h4 {
 }
 
 /* Style setting for description */
-.description {
+.description { 
     margin: 10px 20px;
     color: #000000;
     text-align: left;
@@ -68,7 +68,7 @@ h4 {
 }
 
 /* Style setting for all paragraphs */
-p {
+p { 
     margin: 10px 20px;
     color: #000000;
     text-align: left;
