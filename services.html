@@ -3,164 +3,66 @@
 
 <head>
 	<link rel="stylesheet" href="css/services-style.css">
+	<link rel="stylesheet" href= "css/home_page.css">
 </head>
 
 <body>
 
-	<div class="topnav">
-		<a href="#landing-page"> HOME </a>
-		<a class="active" href "#services"> SERVICES </a>
-		<a href="#about-us"> ABOUT US </a>
-		<a href="#meet-the-staff"> MEET THE STAFF </a>
-		<a href="#login"> LOGIN </a>
+	<div class="navbar">
+        	<ul>
+            		<li><a href="#home">HOME</a></li>
+            		<li><a class="active" href= "#service">SERVICES</a></li>
+			<li><a href="appointments">APPOINTMENTS</a></li>
+            		<li><a href="#meet-the-staff">MEET THE STAFF</a></li>
+            		<li><a href="#about-us">ABOUT US</a></li>
+        		<li><a href="#login">LOGIN</a></li>
+        	</ul>
 	</div>
 
-	<!-- This is the circle around At Lisa's Nails, we provide... -->
-	<!-- This needs to be at the top or the font color is more faded -->
-	<svg class="ServicesRec_m">
-		<rect id="ServicesRec_m" rx="37.5" ry="37.5" x="0" y="0" width="1040" height="75">
-		</rect>
-	</svg>	
-
-	<!-- The header/title of the page -->
-	<div id="Services_We_Provide">
-		<span>Services We Provide</span>
-	</div>
-
-	<!-- The subtitle of the page and it goes inside of the circle of ServicesRec_m -->
-	<div id="At_Lisas_Nails_we_provide_seve">
-		<span>At Lisa's Nails, we provide several services for our customers. Each associate has a specialty in each of these services.</span>
-	</div>
-
-
-	<!-- This is the rectangle of Manicure/Pedicure -->
-	<!-- It also included the empty image manicure_m -->
-	<div id="Mani-Pedi_m">
-		<svg class="Rectangle_37_m">
-			<rect id="Rectangle_37_m" rx="40" ry="40" x="0" y="0" width="246" height="398">
-			</rect>
-		</svg>
-		<div id="ManicurePedicure">
-			<span>Manicure/Pedicure</span>
-		</div>
-		<img id="manicure_m" src="manicure_m.png" srcset="manicure_m.png 1x, manicure_m@2x.png 2x">
-				
-	</div>
-
-	<!-- This is the rectangle for Waxing -->
-	<svg class="Rectangle_37_na">
-		<rect id="Rectangle_37_na" rx="40" ry="40" x="0" y="0" width="247" height="398">
-		</rect>
-	</svg>
-
-	<!-- The image inside the rectange is include: waxing -->
-	<img id="waxing" src="waxing.png" srcset="waxing.png 1x, waxing@2x.png 2x">
-
-	<!-- This is the waxing text inside the rectangle -->
-	<div id="Waxing_nb">
-		<span>Waxing</span>
-	</div>
-
-	<!-- This is the lashes rectangle -->
-	<svg class="Rectangle_37_nc">
-		<rect id="Rectangle_37_nc" rx="40" ry="40" x="0" y="0" width="246" height="398">
-		</rect>
-	</svg>
-
-	<!-- This is the image inside lashes and named: lashes -->
-	<img id="lashes" src="lashes.png" srcset="lashes.png 1x, lashes@2x.png 2x">
+    <div class="header-and-description">
+        <h3 class="Services_Header">Services We Provide</h3>
+        <br>
+        <p class="services-description">At Lisa's Nails, we provide several services for our customers. Each associate has a specialty in each of these services. </p>
+    </div>
 	
-	<!-- This is the lashes text inside the rectangle -->	
-	<div id="Lashes_ne">
-		<span>Lashes</span>
-	</div>
 
-	<!-- This is the rectangle for face/body -->
-	<svg class="Rectangle_37_nf">
-		<rect id="Rectangle_37_nf" rx="40" ry="40" x="0" y="0" width="246" height="398">
-		</rect>
-	</svg>
+    <!-- service profiles  -->
+    <div class="container">
+        <div class="box">
+            <div class="service">
+                <img class="staff-icon" src="images/profile-icon.png" alt="gray user icon profile">
+                <p class="service-name">Manicure/Pedicure</p>
+                <button class="button">View</button>
+            </div>
+        </div>
 
-	<!-- This is the face/body text inside the rectangle -->
-	<div id="FaceBody">
-		<span>Face/Body</span>
-	</div>
+	<div class="box">
+            <div class="service">
+                <img class="staff-icon" src="images/profile-icon.png" alt="gray user icon profile">
+                <p class="service-name">Waxing</p>
+                <button class="button">View</button>
+            </div>
+        </div>
 
-	<!-- This is the lashes image manicure_nh-->
-	<img id="manicure_nh" src="manicure_nh.png" srcset="manicure_nh.png 1x, manicure_nh@2x.png 2x">
+        <div class="box">
+            <div class="service">
+                <img class="staff-icon" src="images/profile-icon.png" alt="gray user icon profile">
+                <p class="service-name">Lashes</p>
+                <button class="button">View</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="service">
+                <img class="staff-icon" src="images/profile-icon.png" alt="gray user icon profile">
+                <p class="service-name">Face/Body</p>
+                <button class="button">View</button>
+            </div>
+        </div>
 
 
-	<!-- This sets up the view button for the Manicure box -->
-	<div id="Component_24__2" class="Component_24___2">
+</div>
 
-		<!-- I included what the manicure/pedicure view button links too -->
-		<a href = "#services-manicure-view.html">
-
-		<svg class="Path_9" viewBox="0 0 202.097 47.013">
-			<path id="Path_9" d="M 19.91992378234863 0 L 182.1767578125 0 C 193.1782379150391 0 202.0966796875 10.5241231918335 202.0966796875 23.50628662109375 C 202.0966796875 36.48845291137695 193.1782379150391 47.0125732421875 182.1767578125 47.0125732421875 L 19.91992378234863 47.0125732421875 C 8.918454170227051 47.0125732421875 0 36.48845291137695 0 23.50628662109375 C 0 10.5241231918335 8.918454170227051 0 19.91992378234863 0 Z">
-			</path>
-		</svg>
-		</a>
-
-		<!-- This is the button text for manicure -->
-		<div id="View_nq">
-			<span>View</span>
-		</div>
-	</div>	
-
-	<!-- This sets up the view button for the Waxing box -->	
-	<div id="Component_25__1" class="Component_25___1">
-
-		<!-- This is html pager after the waxing view button is clicked -->
-		<a href = "#services-waxing-view.html">
-
-		<svg class="Path_9_ns" viewBox="0 0 202.097 47.013">
-			<path id="Path_9_ns" d="M 19.91992378234863 0 L 182.1767578125 0 C 193.1782379150391 0 202.0966796875 10.5241231918335 202.0966796875 23.50628662109375 C 202.0966796875 36.48845291137695 193.1782379150391 47.0125732421875 182.1767578125 47.0125732421875 L 19.91992378234863 47.0125732421875 C 8.918454170227051 47.0125732421875 0 36.48845291137695 0 23.50628662109375 C 0 10.5241231918335 8.918454170227051 0 19.91992378234863 0 Z">
-			</path>
-		</svg>
-		</a>
-
-		<!-- This is the button text for waxing -->
-		<div id="View_nt">
-			<span>View</span>
-		</div>
-	</div>
-
-	<!== This sets up the view button for Lashes box -->
-	<div id="Component_26__2" class="Component_26___2">
-
-		<!-- Link to next html page once lashes button is clicked -->
-		<a href = "#services-lashes-view.html">
-
-		<svg class="Path_9_nv" viewBox="0 0 202.097 47.013">
-			<path id="Path_9_nv" d="M 19.91992378234863 0 L 182.1767578125 0 C 193.1782379150391 0 202.0966796875 10.5241231918335 202.0966796875 23.50628662109375 C 202.0966796875 36.48845291137695 193.1782379150391 47.0125732421875 182.1767578125 47.0125732421875 L 19.91992378234863 47.0125732421875 C 8.918454170227051 47.0125732421875 0 36.48845291137695 0 23.50628662109375 C 0 10.5241231918335 8.918454170227051 0 19.91992378234863 0 Z">
-			</path>
-		</svg>
-		</a>
-
-		<!-- This is the button text for lashes -->
-		<div id="View_nw">
-			<span>View</span>
-		</div>
-	</div>
-
-	<!-- This sets up the view button for face/body -->
-	<div id="Component_27__1" class="Component_27___1">
-
-		<!-- This sets up the face/body page once the face/body button is clicked -->
-		<a href = "services-face-view.html">
-
-		<svg class="Path_9_ny" viewBox="0 0 202.097 47.013">
-			<path id="Path_9_ny" d="M 19.91992378234863 0 L 182.1767578125 0 C 193.1782379150391 0 202.0966796875 10.5241231918335 202.0966796875 23.50628662109375 C 202.0966796875 36.48845291137695 193.1782379150391 47.0125732421875 182.1767578125 47.0125732421875 L 19.91992378234863 47.0125732421875 C 8.918454170227051 47.0125732421875 0 36.48845291137695 0 23.50628662109375 C 0 10.5241231918335 8.918454170227051 0 19.91992378234863 0 Z">
-			</path>
-		</svg>
-		</a>
-
-		<!-- This is the view text button for face/body -->
-		<div id="View_nz">
-			<span>View</span>
-		</div>
-	</div>
 
 </body>
 
