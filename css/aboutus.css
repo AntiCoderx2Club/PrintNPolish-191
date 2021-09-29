@@ -21,9 +21,9 @@
 
 /* About Us title */
 .aboutus {
+    margin: 10px;
     color: #000000;
     text-align: left;
-    padding: 14px 20px;
     text-decoration: none;
     font-family: "adobe-clean", sans-serif;
     font-size: 17px;
@@ -31,9 +31,9 @@
 
 /* All headers aside from title */
 h4 {
+    margin: 10px;
     color: #000000;
     text-align: left;
-    padding: 5px 20px;
     text-decoration: none;
     font-family: "adobe-clean", sans-serif;
     font-size: 17px;
@@ -41,11 +41,12 @@ h4 {
 
 /* Style setting for description */
 .description {
+    margin: 10px;
     color: #000000;
     text-align: left;
     word-wrap: normal;
-    padding: 20px 30px;
-    border-radius: 25px;
+    padding: 10px 10px;
+    border-radius: 30px;
     border: 2px solid #ebe2d9;
     text-decoration: none;
     font-family: "adobe-clean", sans-serif;
@@ -54,10 +55,10 @@ h4 {
 
 /* Style setting for all paragraphs */
 p {
+    margin: 10px;
     color: #000000;
     text-align: left;
     word-wrap: normal;
-    padding: 20px 30px;
     border-radius: 25px;
     border: 2px solid #ebe2d9;
     text-decoration: none;
@@ -67,9 +68,9 @@ p {
 
 /* Style setting for LOCATION */
 .location {
+    margin: 10px;
     color: #000000;
     text-align: left;
-    padding: 14px 16px;
     text-decoration: none;
     font-family: "adobe-clean", sans-serif;
     font-size: 17px;
