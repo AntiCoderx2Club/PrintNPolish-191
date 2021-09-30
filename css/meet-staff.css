@@ -127,20 +127,6 @@ body {
     font-weight: normal;
     font-size: 40px;
     color: rgba(112, 112, 112, 1);
-
-
-    /* left: 42px;
-    top: 25px;
-    position: absolute;
-    overflow: visible;
-    width: 268px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Times New Roman;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 50px;
-    color: rgba(112, 112, 112, 1); */
 }
 
 
@@ -154,15 +140,11 @@ p.staff-description {
     padding-right: 20px;
     border-radius: 2em;
     background: #ffffff8a;
-
-    left: 200px;
-    top: 175px;
-    position: absolute;
-    overflow: visible;
-    width: 896px;
+    position: relative;
+    width: 1200px;
     height: 50px;
-    line-height: 23px;
-    margin-top: -1.5px;
+    margin: 0px auto;
+    margin-top: 160px;
     text-align: center;
     font-family: "Helvetica Neue",
         Helvetica,
@@ -219,6 +201,7 @@ body {
     width: 1200px;
     height: 400px;
     margin: 240px auto;
+    margin-top: 0px;
 }
 
 .container .box {
