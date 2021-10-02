@@ -97,3 +97,27 @@ html, body{
 	font-size: 113px;
 	color: rgba(0,0,0,1);
 }
+
+/*These two functions down here deal with the background image.*/
+.bg {
+      position: fixed; 
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.bg::before{
+      content: "";
+      background-image: url("../images/lisasnails_background.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.30;
+}
