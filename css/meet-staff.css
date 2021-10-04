@@ -1,12 +1,9 @@
-/* //////////////////////////////////////////////////////////////////// */
-/* HOME-PAGE.CSS CODE temporarily added here, will be removed later!!   */
-/* Staff Papge CSS Code starts on Line 110                              */
-/* //////////////////////////////////////////////////////////////////// */
-
+/* ////////////////////////////////////////////////////////////////////////   */
+/* 1. NAV BAR CODE CSS [temporarily added, will be removed later]             */
+/* /////////////////////////////////////////////////////////////////////////  */
 
 /* Add a black background color to the top navigation */
 .navbar {
-
     background-color: #333;
     overflow: hidden;
     position: fixed;
@@ -63,7 +60,6 @@
     display: inline-block;
 }
 
-/*This deals with the Lisa's Nails Logo*/
 html,
 body {
     width: 100%;
@@ -72,49 +68,18 @@ body {
     padding: 0;
 }
 
-.Lisas_Nails {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/* ////////////////////////////////////////////////////////////////////////   */
+/* 2. STAFF PAGE CSS                                                          */
+/* /////////////////////////////////////////////////////////////////////////  */
 
-.square {
-    position: relative;
-    width: 40vmin;
-    border: solid black 2px;
+
+/* border-box property adjusts the w and h of the box 
+   according to the size of the content,easier to size. */
+* {
     box-sizing: border-box;
 }
 
-.square:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-}
-
-.content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    white-space: nowrap;
-    text-align: center;
-    font-family: Times New Roman;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 113px;
-    color: rgba(0, 0, 0, 1);
-}
-
-/* ///////////////////////////////////////////////////////////////  */
-/* MEET STAFF PAGE CSS CODE BELOW */
-/* ///////////////////////////////////////////////////////////////  */
-
 .Staff_Header {
-
     left: 256px;
     top: 80px;
     position: absolute;
@@ -128,7 +93,6 @@ body {
     font-size: 40px;
     color: rgba(112, 112, 112, 1);
 }
-
 
 p.staff-description {
     border: .5px;
@@ -146,17 +110,14 @@ p.staff-description {
     margin: 0px auto;
     margin-top: 160px;
     text-align: center;
-    font-family: "Helvetica Neue",
+    font-family: "adobe-clean", sans-serif;
+    /* font-family: "Helvetica Neue",
         Helvetica,
         Arial,
-        sans-serif;
+        sans-serif; */
     font-style: normal;
     font-size: 18px;
     color: rgba(112, 112, 112, 1);
-}
-
-* {
-    box-sizing: border-box;
 }
 
 .left,
@@ -187,15 +148,9 @@ p.staff-description {
     clear: both;
 }
 
-/* ///////////////////////////////////////////////////////////////  */
-/* STAFF PROFILE GRID BOX CODE                                      */
-/* ///////////////////////////////////////////////////////////////  */
+/* STAFF PROFILE GRID BOX */
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
+/* setting up the container's w and h */
 .container {
     position: relative;
     width: 1200px;
@@ -204,6 +159,7 @@ body {
     margin-top: 0px;
 }
 
+/* calculate box size according to container's w and h  */
 .container .box {
     position: relative;
     width: calc(400px - 30px);
@@ -214,9 +170,9 @@ body {
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 10px;
-
 }
 
+/* centers staff container content  */
 .container .box .tech {
     text-align: center;
     position: absolute;
@@ -229,6 +185,7 @@ body {
     z-index: 1;
 }
 
+/* centers staff name text */
 p.staff-name {
     color: #343333;
     font-size: 20px;
@@ -239,6 +196,7 @@ p.staff-name {
     ;
 }
 
+/* 'Book Now' button attributes */
 .button {
     border: 2px solid #f4511e;
     border-radius: 20px;
@@ -259,6 +217,7 @@ p.staff-name {
     background-color: white;
 }
 
+/* adjusting staff profile image size and padding */
 .container .box .tech img {
     padding-top: 20px;
     width: auto;
