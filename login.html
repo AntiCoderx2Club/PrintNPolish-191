@@ -1,39 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="css/home_page.css">
-    <!--link rel="stylesheet" href="css/login.css"-->
+    <title>Lisa's Nails Login</title>
+	<!--link rel="stylesheet" href="css/home_page.css"-->
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
-<body style="background-color: #FFDCDC;">
+<body style="background-color: #ffffff;">
+    <div class=" navbar">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="#appointments">APPOINTMENTS</a></li>
+            <li><a href="#meet-the-staff">STAFF</a></li>
+            <li><a href="#about-us">ABOUT US</a></li>
+            <li><a class="active" href="#login">LOGIN</a></li>
+        </ul>
+    </div>
 
-	<div class="navbar">
-        <u1>
-		    <li><a class="active" href="#home"> HOME </a></li>
-		    <li><a href="#services"> SERVICES </a></li>
-		    <li><a href="#meet-the-staff"> MEET THE STAFF </a></li>
-            <li><a href="#about-us"> ABOUT US </a></li>
-		    <li><a href="#login"> LOGIN </a></li>
-        </u1>
-	</div>
-
-	<div class = "Login">
-		<form>
-            <label for="email">Email</label><br>
-            <input type="text" id="email" name="email"><br>
-            <label for="pw">Password</label><br>
-            <input type="text" id="pw" name="pw">
-            <p>forgot password?</p>
-			<button type="button">Login</button><br>
-        </form>
-
-	</div>
-    <div>
-        <form>
-            <p>Don't have an account?</p>
-            <button type="button">Sign Up</button><br>
-        </form>
+	<div class = "container">
+        <div class = "square">
+            <div class = "content">
+                <div class = "form1">
+                    <form>
+                        <label for="email">Email</label><br>
+                        <input type="text" id="email" name="email"><br>
+                        <label for="pw">Password</label><br>
+                        <input type="text" id="pw" name="pw">
+                        <p>Forgot Password?</p>
+                        <button class="button">Login</button><br>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class = "square">
+            <div class = "content">
+                <div class = "form2">
+                    <form>
+                        <p>Don't have an account?</p>
+                        <button class="button">Sign Up</button><br>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
