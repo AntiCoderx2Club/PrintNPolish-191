@@ -1,56 +1,59 @@
 .dropbtn {
 
-    background-color: #fd79e1;
-    color: rgb(0, 0, 0);
-    padding: 16px;
-    font-size: 30px;
-    border: none;
-    cursor: pointer;
-    font-family: Arial;
-    text-align: center;
+  /*Original color you had: #f36ddd */
+  /*Switched to rgba to change color and opacity. The last number changes the opacity fyi.*/
+  background-color: rgba(245, 7, 146, 0.4);
+  color: rgb(0, 0, 0);
+  padding: 30px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  font-family: Arial;
+  text-align: center;
+  transition: 0.4s;
   height: 100px;
-  border: 3px solid rgb(255, 0, 149);
+  border: 4px solid rgb(255, 0, 149);
 }
 
 .center{
-  line-height: 200px;
-  height: 200px;
-  text-align: center;
-  font-size:40px;
-  font-family: Arial;
-  border: 4px pink;
+line-height: 200px;
+height: 200px;
+text-align: center;
+font-size:40px;
+font-family: Arial;
+border: 4px pink;
 }
 
 .dropdown {
 
-    position: relative;
-    /*display: inline-block;*/
-    text-align: center;
+  position: relative;
+  /*display: inline-block;*/
+  text-align: center;
 
 }
 
 .dropdown-content {
-    display:none;
-    position: center;
-    background-color: #f9f9f9;
-    font-family: Arial;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  display:none;
+  position: center;
+  background-color: #db00b7;
+  font-family: Arial;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
 }
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
-    background-color: #fa34cf;
-  }
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #fa34cf;
+}
