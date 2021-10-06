@@ -239,12 +239,8 @@ p.service-name {
 
 .container .box .service img {
     	padding-top: 20px;
-    	/* width: auto; */
-	width: 200px;
+    	width: auto; 
     	height: 214px;
-	/*object-fit: contain; */
 	border-radius: 10px ;
-	/* border: 1px solid grey; */
-
 }
 
