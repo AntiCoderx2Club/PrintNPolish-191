@@ -69,9 +69,8 @@ body {
 }
 
 /* ////////////////////////////////////////////////////////////////////////   */
-/* 2. SERVICES : FACE + BODY PAGE CSS                                                          */
+/* 2. SERVICES : FACE + BODY PAGE CSS                                         */
 /* /////////////////////////////////////////////////////////////////////////  */
-
 
 /* border-box property adjusts the w and h of the box 
    according to the size of the content,easier to size. */
@@ -135,7 +134,7 @@ body {
     position: relative;
     width: calc(400px - 30px);
     height: calc(400px - 30px);
-    background: #ff0;
+    background: #ededed;
     float: left;
     margin: 15px;
     box-sizing: border-box;
@@ -159,11 +158,13 @@ body {
 p.service-name {
     color: #343333;
     font-size: 20px;
-    font-family: "Helvetica Neue",
-        Helvetica,
-        Arial,
-        sans-serif;
-    ;
+    font-family: "adobe-clean", sans-serif;
+}
+
+.container .box .service img {
+    padding-top: 20px;
+    width: auto;
+    height: 214px;
 }
 
 .button {
@@ -177,10 +178,4 @@ p.service-name {
     opacity: 0.6;
     display: inline-block;
     text-decoration: none;
-}
-
-.container .box .service img {
-    padding-top: 20px;
-    width: auto;
-    height: 214px;
 }

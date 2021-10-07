@@ -72,7 +72,6 @@ body {
 /* 2. STAFF PAGE CSS                                                          */
 /* /////////////////////////////////////////////////////////////////////////  */
 
-
 /* border-box property adjusts the w and h of the box 
    according to the size of the content,easier to size. */
 * {
@@ -111,10 +110,6 @@ p.staff-description {
     margin-top: 160px;
     text-align: center;
     font-family: "adobe-clean", sans-serif;
-    /* font-family: "Helvetica Neue",
-        Helvetica,
-        Arial,
-        sans-serif; */
     font-style: normal;
     font-size: 18px;
     color: rgba(112, 112, 112, 1);
@@ -164,7 +159,7 @@ p.staff-description {
     position: relative;
     width: calc(400px - 30px);
     height: calc(400px - 30px);
-    background: #ff0;
+    background: #ededed;
     float: left;
     margin: 15px;
     box-sizing: border-box;
@@ -196,6 +191,13 @@ p.staff-name {
     ;
 }
 
+/* adjusting staff profile image size and padding */
+.container .box .tech img {
+    padding-top: 20px;
+    width: auto;
+    height: 214px;
+}
+
 /* 'Book Now' button attributes */
 .button {
     border: 2px solid #f4511e;
@@ -215,11 +217,4 @@ p.staff-name {
 .button:hover {
     color: #f4511e;
     background-color: white;
-}
-
-/* adjusting staff profile image size and padding */
-.container .box .tech img {
-    padding-top: 20px;
-    width: auto;
-    height: 214px;
 }
