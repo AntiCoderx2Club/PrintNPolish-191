@@ -1,0 +1,123 @@
+/* Add a black background color to the top navigation */
+.navbar {
+      
+      background-color: #333;
+      overflow: hidden;
+      position: fixed; /* Set the navbar to fixed position */
+      top: 0; /* Position the navbar at the top of the page */
+      width: 100%; /* Full width */
+}
+  
+/* Style the links inside the navigation bar */
+.navbar a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family: "adobe-clean", sans-serif;
+      font-size: 17px;
+}
+  
+/* Change the color of links on hover */
+.navbar a:hover {
+      background-color:#FF9292;
+      color: black;
+}
+  
+/* Add a color to the active/current link */
+.navbar a.active {
+      background-color:#FF9292;
+      color: black;
+}
+
+/*Changes the background color of the navbar*/
+.navbar {
+      background-color:#FFB4B4;
+}
+
+/*Changes the tab color of each link. i.e: HOME, SERVICES ...*/
+.navbar a {
+      background-color:#FFB4B4;
+      color: black;
+}
+
+.navbar ul {
+      list-style: none;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+}
+/*Used inline-block to display items horizontally*/
+.navbar li {
+      display: inline-block;
+}
+
+/*This deals with the Lisa's Nails Logo*/
+html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+}
+
+.Lisas_Nails {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.square {
+      position: relative;
+      width: 40vmin;
+      border: solid black 2px;
+      box-sizing: border-box;
+}
+
+.square:after {
+      content: "";
+      display: block;
+      padding-bottom: 100%; 
+}
+
+.content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      width: 100%;
+      height: 100%; 
+      white-space: nowrap;
+	text-align: center;
+	font-family: Times New Roman;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 113px;
+	color: rgba(0,0,0,1);
+}
+
+/*These two functions down here deal with the background image.*/
+.bg {
+      position: fixed; 
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.bg::before {
+      content: "";
+      background-image: url("../images/lisasnails_background.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.30;
+}
