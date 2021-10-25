@@ -1,0 +1,42 @@
+<!-- This file handles the user regsitration-->
+<head>
+    <link href="/css/register.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background-color: #FF9292">
+    
+    <div class=" navbar">
+        <ul>
+            <li><a href="/Home_Page">HOME</a></li>
+            <li><a href="/services">SERVICES</a></li>
+            <li><a href="#appointments">APPOINTMENTS</a></li>
+            <li><a href="#meet-the-staff">STAFF</a></li>
+            <li><a href="#about-us">ABOUT US</a></li>
+            <li><a class="active" href="/login">LOGIN</a></li>
+        </ul>
+    </div>
+<br><br><br><br>
+
+<form action="/register" method="POST">
+    <div class = "h1">Register</div>
+
+<div>
+    <label for ="name"> NAME </label>
+    <input type="text" id="name" name="name" required>
+</div>
+
+<div>
+    <label for ="email"> EMAIL </label>
+    <input type="email" id="email" name="email" required>
+</div>
+
+<div>
+    <label for ="password"> PASSWORD </label>
+    <input type="password" id="password" name="password" required>
+</div>
+
+<button type="submit"> Register </button>
+
+</form>
+
+<a href="/login"> <button>Login</button> </a>

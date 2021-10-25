@@ -1,0 +1,26 @@
+
+
+<head>
+<link href="/css/login.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background-color: #FF9292"></body>
+
+<div class=" navbar">
+  <ul>
+      <li><a href="/Home_Page">HOME</a></li>
+      <li><a href="services.html">SERVICES</a></li>
+      <li><a href="#appointments">APPOINTMENTS</a></li>
+      <li><a href="#meet-the-staff">STAFF</a></li>
+      <li><a href="#about-us">ABOUT US</a></li>
+      <li><a class="active" href="#login">LOGIN</a></li>
+  </ul>
+</div>
+<br><br><br><br>
+
+<h1>Hi <%= name %>! Thank you for logging in. </h1>
+
+
+<form action="/logout?_method=DELETE" method="POST">
+    <button type="submit">Log Out</button>
+  </form>
