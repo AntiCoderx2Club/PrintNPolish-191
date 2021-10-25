@@ -1,11 +1,16 @@
 {
-  "name": "webdevsimplified",
+  "name": "printnpolish",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "devStart": "nodemon server.js",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntiCoderx2Club/PrintNPolish-191.git"
+  },
+ 
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -23,5 +28,11 @@
     "nodemon": "^2.0.13"
   },
   "keywords": [],
-  "description": ""
+  "description": "",
+  "bugs": {
+    "url": "https://github.com/AntiCoderx2Club/PrintNPolish-191/issues"
+  },
+  "homepage": "https://github.com/AntiCoderx2Club/PrintNPolish-191#readme"
 }
+
+
