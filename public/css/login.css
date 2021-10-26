@@ -146,7 +146,7 @@ body {
 
 /*These two functions down here deal with the background image.*/
 .bg {
-  position: fixed; 
+  position: relative; /*Switched from fixed to relative*/
   height: 100vh;
   width: 100%;
   display: flex;
@@ -154,6 +154,7 @@ body {
   justify-content: center;
 }
 
+/*psuedo element*/
 .bg::before {
   content: "";
   background-image: url("/images/lisasnails_background.jpg");
@@ -166,4 +167,9 @@ body {
   bottom: 0px;
   left: 0px;
   opacity: 0.30;
+}
+
+.container {
+  position: relative; /*set position: relative so that it will be on top of the pseudo-element and background image. */
+  margin-top: -900px;
 }
