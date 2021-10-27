@@ -2,7 +2,6 @@ if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config()
 }
 
-
 const express = require('express')
 const app = express()
 const bcrypt = require('bcrypt')
@@ -43,8 +42,6 @@ app.get('/login', checkNotAuthenticated, (req, res) => {
 })
 
 
-
-
 app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
   successRedirect: '/',
   failureRedirect: '/login',
@@ -61,6 +58,18 @@ app.get('/Home_Page', (req, res) => {
 
 app.get('/services', (req, res) => {
   res.render('services.ejs')
+})
+
+app.get('/appointments', (req, res) => {
+  res.render('appointments.ejs')
+})
+
+app.get('/staff', (req, res) => {
+  res.render('staff.ejs')
+})
+
+app.get('/about_us', (req, res) => {
+  res.render('about_us.ejs')
 })
 
 app.post('/register', checkNotAuthenticated, async (req, res) => {

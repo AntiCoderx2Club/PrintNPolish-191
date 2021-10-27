@@ -66,6 +66,26 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #ffffff;
+
+  /* CSS Attribute for background image */
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  content: "";
+  background-image: url("/images/LisaNail-BG_opacity30.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 
 /**********************************************************************/
@@ -124,6 +144,7 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+
 .button {
   border: 2px solid #f4511e;
   border-radius: 20px;
@@ -145,17 +166,18 @@ body {
 }
 
 /*These two functions down here deal with the background image.*/
-.bg {
-  position: relative; /*Switched from fixed to relative*/
+/*Switched from fixed to relative*/
+/* .bg {
+  position: relative; 
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 /*psuedo element*/
-.bg::before {
+/* .bg::before {
   content: "";
   background-image: url("/images/lisasnails_background.jpg");
   background-size: cover;
@@ -167,9 +189,11 @@ body {
   bottom: 0px;
   left: 0px;
   opacity: 0.30;
-}
+} */
 
-.container {
-  position: relative; /*set position: relative so that it will be on top of the pseudo-element and background image. */
+
+/*set position: relative so that it will be on top of the pseudo-element and background image. */
+/* .container {
+  position: relative; 
   margin-top: -900px;
-}
+} */
