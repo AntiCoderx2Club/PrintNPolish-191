@@ -124,6 +124,28 @@ body {
   border-radius: 0.3em;
 }
 
+
+.square2 a{
+  border: 2px solid #f4511e;
+  border-radius: 20px;
+  background-color: #d78084;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.square2 a:hover{
+ color: #f4511e;
+ background-color: white;
+}
+
+
 .forgot-pw {
   text-align: left;
   font-size: 10px;
