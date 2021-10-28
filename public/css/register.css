@@ -77,6 +77,19 @@
         font-size: 75px;
      }
 
+/*Added div and label to right align labels and inputs*/
+  div {
+    position: relative;
+    margin-bottom: 10px;
+    
+  }
+  label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+  }
+/*****************************************************/
+
   body {
     font-family: "adobe-clean",
       sans-serif;
