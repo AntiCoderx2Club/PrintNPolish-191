@@ -81,15 +81,10 @@ router.post('/register', (req, res) => {
 
 
 
+
+
 //App.gets moved from server.js -> users.js
 //Changing app.get -> router.get
-
-//Home Page
-router.get('/', forwardAuthenticated, (req, res) => {
-    res.render('Home_Page.ejs');
-   
- })
-
 // app.get login page
 router.get('/login', forwardAuthenticated, (req, res) => {
     res.render('login.ejs')
@@ -100,6 +95,7 @@ router.get('/register', forwardAuthenticated, (req, res) => {
     res.render('register.ejs')
   })
 
+/*
 // app.get Home_Page
 router.get('/Home_Page', (req, res) => {
     res.render('Home_Page.ejs')
@@ -119,7 +115,7 @@ router.get('/appointments', (req, res) => {
 router.get('/staff', (req, res) => {
     res.render('staff.ejs')
   })
-
+*/
 
 
   module.exports = router;
