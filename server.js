@@ -1,6 +1,4 @@
-//if (process.env.NODE_ENV !== 'production') {
-  //require('dotenv').config()
-//}
+
 
 const express = require('express')
 const app = express()
@@ -96,77 +94,6 @@ app.use('/users', require('./routes/users.js'));
 
 
 
-
-
-
-//Unused from 11/8/21 version
-//app.use(methodOverride('_method'))
-
-//app.use(express.static('public'));
-
-
-//App.get Copies (will be posted in user.js routes directory)
-/*
-app.get('/', checkAuthenticated, (req, res) => {
-   res.redirect('Home_Page');
-  
-})
-
-app.get('/login', checkNotAuthenticated, (req, res) => {
-  res.render('login.ejs')
-})
-
-
-app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
-  successRedirect: '/',
-  failureRedirect: '/login',
-  failureFlash: true
-}))
-
-app.get('/register', checkNotAuthenticated, (req, res) => {
-  res.render('register.ejs')
-})
-
-app.get('/Home_Page', (req, res) => {
-  res.render('Home_Page.ejs')
-})
-
-app.get('/services', (req, res) => {
-  res.render('services.ejs')
-})
-
-app.get('/appointments', (req, res) => {
-  res.render('appointments.ejs')
-})
-
-app.get('/staff', (req, res) => {
-  res.render('staff.ejs')
-})
-
-app.get('/about_us', (req, res) => {
-  res.render('about_us.ejs')
-})
-
-app.post('/register', checkNotAuthenticated, async (req, res) => {
-  try {
-    const hashedPassword = await bcrypt.hash(req.body.password, 10)
-    users.push({
-      id: Date.now().toString(),
-      name: req.body.name,
-      email: req.body.email,
-      password: hashedPassword
-    })
-    res.redirect('/login')
-  } catch {
-    res.redirect('/register')
-  }
-})
-
-app.delete('/logout', (req, res) => {
-  req.logOut()
-  res.redirect('/login')
-})
-*/
 
 
 //Port 3000
