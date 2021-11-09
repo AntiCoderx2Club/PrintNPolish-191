@@ -8,4 +8,6 @@ UPDATE: 11/9/21
 and /users/register for EVERY page.
     -Routing the POST to the /users directory. Once that is done, I literally believe it will successfully be able to write to MongoDB and we’ll be DONE (at least for this sprint).
     
+    P.S-Also this is based on Sprint007-node instead of Sprint008, so for any changes made to the website like adding the services stuff will need to be re-implemented (my bad lol)
+    
     For further explanations, I will try to make a video and post it to our Google Drive
