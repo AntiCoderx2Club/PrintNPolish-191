@@ -14,68 +14,89 @@ const {forwardAuthenticated} = require('../config/auth');
 router.get('/login', forwardAuthenticated, (req, res) => res.render('login.ejs'));
 
 
-//Register Page
-router.get('/register', forwardAuthenticated, (req, res) => {
-  return res.render('register.ejs');
-});
 
-//Register
-router.post('/register', (req, res) => {
+/*---------11/9/21 DC: Testing register GET method---------*/
+//  - so far, by registring, the data from the form page is being sent to mongodb cluster database
+//  - next steps: salt and hash the passwords, implement passportJS for authentication, route to /users/login after successful account registration 
+router.get("/register", async (req,res) =>{
+  const data = await User.find(); 
+  res.render("register.ejs", {data});
+})
+
+/*---------11/9/21 DC: Testing register POST method---------*/
+router.post("/register", async (req,res) =>{
   const { name, email, password } = req.body;
-  let errors = [];
+  await User.create({name, email, password});
+  const data = await User.find(); 
+  console.log("Data from form: ", req.body);
+  res.render("register.ejs", {data});
+})
 
-  if (!name || !email || !password) {
-    errors.push({ msg: 'Please enter all fields' });
-  }
 
-  if (password.length < 6) {
-    errors.push({ msg: 'Password must be at least 6 characters' });
-  }
 
-  if (errors.length > 0) {
-    res.render('register', {
-      errors,
-      name,
-      email,
-      password
-    });
-  } else {
-    User.findOne({ email: email }).then(user => {
-      if (user) {
-        errors.push({ msg: 'Email already exists' });
-        res.render('register', {
-          errors,
-          name,
-          email,
-          password
-        });
-      } else {
-        const newUser = new User({
-          name,
-          email,
-          password
-        });
+//------PREVIOUS GET/POST CODE: ----------------------//
+// //Register Page
+// router.get('/register', forwardAuthenticated, (req, res) => {
+//   return res.render('register.ejs');
+// });
 
-        bcrypt.genSalt(10, (err, salt) => {
-          bcrypt.hash(newUser.password, salt, (err, hash) => {
-            if (err) throw err;
-            newUser.password = hash;
-            newUser
-              .save()
-              .then(user => {
-                req.flash(
-                  'success_msg',
-                  'You are now registered and can log in'
-                );
-                res.redirect('/users/login');
-              })
-              .catch(err => console.log(err));
-          });
-        });
-      }
-    });
-  }
-});
+// //Register
+// router.post('/register', (req, res) => {
+//   const { name, email, password } = req.body;
+//   let errors = [];
+
+//   if (!name || !email || !password) {
+//     errors.push({ msg: 'Please enter all fields' });
+//   }
+
+//   if (password.length < 6) {
+//     errors.push({ msg: 'Password must be at least 6 characters' });
+//   }
+
+//   if (errors.length > 0) {
+//     res.render('register', {
+//       errors,
+//       name,
+//       email,
+//       password
+//     });
+//   } else {
+//     User.findOne({ email: email }).then(user => {
+//       if (user) {
+//         errors.push({ msg: 'Email already exists' });
+//         res.render('register', {
+//           errors,
+//           name,
+//           email,
+//           password
+//         });
+//       } else {
+//         const newUser = new User({
+//           name,
+//           email,
+//           password
+//         });
+
+//         bcrypt.genSalt(10, (err, salt) => {
+//           bcrypt.hash(newUser.password, salt, (err, hash) => {
+//             if (err) throw err;
+//             newUser.password = hash;
+//             newUser
+//               .save()
+//               .then(user => {
+//                 req.flash(
+//                   'success_msg',
+//                   'You are now registered and can log in'
+//                 );
+//                 res.redirect('/users/login');
+//               })
+//               .catch(err => console.log(err));
+//           });
+//         });
+//       }
+//     });
+//   }
+// });
 
 
 
