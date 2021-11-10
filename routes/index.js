@@ -24,6 +24,28 @@ router.get('/services', (req, res) => {
   res.render('services.ejs')
 })
 
+//app.get extended services pages
+router.get('/services-mani-pedi', (req, res) => {
+  res.render('services-mani-pedi.ejs')
+})
+
+router.get('/services-waxing', (req, res) => {
+  res.render('services-waxing.ejs')
+})
+
+
+router.get('/services-face-body', (req, res) => {
+  res.render('services-face-body.ejs')
+})
+
+router.get('/services-lashes', (req, res) => {
+  res.render('services-lashes.ejs')
+})
+
+
+
+
+
 // app.get appointments
 router.get('/appointments', (req, res) => {
   res.render('appointments.ejs')

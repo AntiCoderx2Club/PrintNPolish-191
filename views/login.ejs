@@ -16,15 +16,16 @@
             <li><a href="/appointments">APPOINTMENTS</a></li>
             <li><a href="/staff">STAFF</a></li>
             <li><a href="/about_us">ABOUT US</a></li>
-            <li><a class="active" href="/login">LOGIN</a></li>
+            <li><a class="active" href="/users/login">LOGIN</a></li>
         </ul>
     </div>
 
-    <form action="/login" method="POST">
+    <!-- <form action="/login" method="POST"> -->
     <div class="container">
         <div class="square1">
             <div class="form1">
-                <form>
+                <!-- <form> -->
+                <form action="/users/login" method="POST">
                     <label for="email">Email</label><br>
                     <input type="email" id="email" name="email"><br>
 
@@ -35,6 +36,7 @@
                 </form>
             </div>
         </div>
+        
         <div class="square2">
             <form>
                 <p>Don't have an account?</p>
