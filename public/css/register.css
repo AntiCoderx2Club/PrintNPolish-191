@@ -74,12 +74,17 @@
     text-align: center;
     color:black;
     font-family: "adobe-clean", sans-serif;
-        font-size: 75px;
+    font-size: 75px;
+    font-style: italic;
      }
 
 /*Added div and label to right align labels and inputs*/
+  div.form {
+    display:block;
+    text-align: center;
+
+  }
   div {
-    position: relative;
     margin-bottom: 10px;
     
   }
@@ -87,6 +92,12 @@
     display: inline-block;
     width: 100px;
     text-align: right;
+  }
+  form{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 /*****************************************************/
 
