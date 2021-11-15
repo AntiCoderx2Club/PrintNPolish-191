@@ -1,12 +1,9 @@
 
-
 const express = require('express')
 const app = express()
-const bcrypt = require('bcrypt')
 const passport = require('passport')
 const flash = require('express-flash')
 const session = require('express-session')
-//const methodOverride = require('method-override')
 const mongoose = require ('mongoose');
 
 //Bootswatch
@@ -20,6 +17,7 @@ require('./config/passport')(passport);
 
 
 //EJS
+
 //app.use(expressLayouts)
 app.set('view-engine', 'ejs');
 app.use(express.static('public'));
@@ -40,8 +38,7 @@ mongoose.connect(db, { useNewUrlParser: true , useUnifiedTopology: true})
 
 
 
-//Unused as of 11/8/21
-//const users = []
+
 
 //Body parser
 app.use(express.urlencoded({ extended: false }))
