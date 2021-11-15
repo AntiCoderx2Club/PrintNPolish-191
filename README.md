@@ -10,3 +10,9 @@ _After hours of trial and error, most of the code is working (woohoo). Here is w
 
 ---    
 > P.S-Also this is based on Sprint007-node instead of Sprint008, so for any changes made to the website like adding the services stuff will need to be re-implemented (my bad lol) For further explanations, I will try to make a video and post it to our Google Drive
+
+##Update 11/15/21 Current Issues:
+    -The app.use(expressLayouts) is currently commented out of the code, this needs to be working to have the register page show with all the bootstrap elements
+    -Register page is updated with hashing and password confirm, HOWEVER gives error when attempting to write to DB.
+    -Error seen: "Error: No default engine was specified and no extension was provided."
+        -Must be related to Routes/Views folder needing to be modified due to new bootstrap implementation
