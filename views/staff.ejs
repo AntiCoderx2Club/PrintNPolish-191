@@ -3,24 +3,48 @@
 <% } %>
 
 <head>
-    <title>Lisa's Nails Login</title>
-    <!--link rel="stylesheet" href="css/home_page.css"-->
-    <link href="/css/login.css" rel="stylesheet" type="text/css">
+    <title>Lisa's Nails Staff</title>
+<link href="/css/login.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <div class=" navbar">
-        <ul>
-            <li><a href="/Home_Page">HOME</a></li>
-            <li><a href="/services">SERVICES</a></li>
-            <li><a href="/appointments">APPOINTMENTS</a></li>
-            <li><a class="active" href="/staff">STAFF</a></li>
-            <li><a href="/about_us">ABOUT US</a></li>
-            <li><a href="/users/login">LOGIN</a></li>
-        </ul>
-    </div>
+    <style>
 
-    <div class="container">
-        <h1> STAFF code to be added </h1>
-    </div>  
+        body {
+            /* CSS Attribute for background image */
+            position: fixed;
+            height: 100vh;
+            width: 100%;
+            /* display: flex; */
+            align-items: center;
+            justify-content: center;
+
+            content: "";
+            background-image: url("/images/LisaNail-BG_opacity30.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+        }
+    </style> 
 </body>
+
+<div class="main-navbar">
+  <ul>
+      <li><a href="/Home_Page">HOME</a></li>
+      <li><a href="/services">SERVICES</a></li>
+      <li><a href="/appointments">APPOINTMENTS</a></li>
+      <li><a class="active" href="/staff">STAFF</a></li>
+      <li><a href="/about_us">ABOUT US</a></li>
+      <li><a href="/users/login">LOGIN</a></li>
+  </ul>
+</div>
+<br><br><br><br>
+
+<div class="container">
+    <h1> STAFF code to be added </h1>
+</div>  

@@ -4,45 +4,67 @@
 
 <head>
     <title>Lisa's Nails Login</title>
-    <!--link rel="stylesheet" href="css/home_page.css"-->
     <link href="/css/login.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <div class=" navbar">
-        <ul>
-            <li><a href="/Home_Page">HOME</a></li>
-            <li><a href="/services">SERVICES</a></li>
-            <li><a href="/appointments">APPOINTMENTS</a></li>
-            <li><a href="/staff">STAFF</a></li>
-            <li><a href="/about_us">ABOUT US</a></li>
-            <li><a class="active" href="/users/login">LOGIN</a></li>
-        </ul>
-    </div>
+    <style>
 
-    <!-- <form action="/login" method="POST"> -->
-    <div class="container">
-        <div class="square1">
-            <div class="form1">
-                <!-- <form> -->
-                <form action="/users/login" method="POST">
-                    <label for="email">Email</label><br>
-                    <input type="email" id="email" name="email"><br>
+        body {
+            /* CSS Attribute for background image */
+            position: fixed;
+            height: 100vh;
+            width: 100%;
+            /* display: flex; */
+            align-items: center;
+            justify-content: center;
 
-                    <label for="password">Password</label><br>
-                    <input type="password" id="password" name="password">
-                    <p class="forgot-pw">Forgot Password?</p>
-                    <button class="submit">Login</button>
-                </form>
-            </div>
-        </div>
-        
-        <div class="square2">
-            <form>
-                <p>Don't have an account?</p>
-                <a href ='register'>Create Account</a>
-                <!-- <button class="button"> <a href ='/register'>Create Account</a></button> -->
+            content: "";
+            background-image: url("/images/LisaNail-BG_opacity30.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+        }
+    </style> 
+</body>
+
+<div class="main-navbar">
+  <ul>
+      <li><a href="/Home_Page">HOME</a></li>
+      <li><a href="/services">SERVICES</a></li>
+      <li><a href="/appointments">APPOINTMENTS</a></li>
+      <li><a href="/staff">STAFF</a></li>
+      <li><a href="/about_us">ABOUT US</a></li>
+      <li><a class="active" href="/users/login">LOGIN</a></li>
+  </ul>
+</div>
+<br><br><br><br>
+
+<div class="container">
+    <div class="square1">
+        <div class="form1">
+            <form action="/users/login" method="POST">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password">
+                <p class="forgot-pw">Forgot Password?</p>
+                <button class="submit">Login</button>
             </form>
         </div>
-    </div>  
-</body>
+    </div>
+    
+    <div class="square2">
+        <form>
+            <p>Don't have an account?</p>
+            <a href ='register'>Create Account</a>
+            <!-- <button class="button"> <a href ='/register'>Create Account</a></button> -->
+        </form>
+    </div>
+</div>  

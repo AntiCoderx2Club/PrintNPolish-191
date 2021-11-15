@@ -43,9 +43,6 @@ router.get('/services-lashes', (req, res) => {
 })
 
 
-
-
-
 // app.get appointments
 router.get('/appointments', (req, res) => {
   res.render('appointments.ejs')
@@ -66,7 +63,7 @@ router.get('/about_us', (req, res) => {
 //Changing from user: req.user.name to user: req.user
 
 router.get('/dashboard', ensureAuthenticated, (req, res) => {
-    res.render('dashboard', { 
+    res.render('dashboard.ejs', { 
         user: req.user 
     })
  });
