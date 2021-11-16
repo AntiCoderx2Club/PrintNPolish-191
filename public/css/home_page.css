@@ -110,7 +110,7 @@ html, body {
 
 .bg::before {
       content: "";
-      background-image: url("../images/lisasnails_background.jpg");
+      background-image: url("/images/lisasnails_background.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: scroll;
