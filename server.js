@@ -20,7 +20,6 @@ require('./config/passport')(passport);
 
 
 //EJS
-//app.use(expressLayouts)
 app.set('view-engine', 'ejs');
 app.use(express.static('public'));
 
@@ -98,7 +97,7 @@ User.find({ name: 'desmond desboine'}, function (err, docs) {
       console.log(err);
   }
   else{
-      console.log("Query result : ", docs);
+      console.log("Query result are as follows : ", docs);
   }
 });
 
