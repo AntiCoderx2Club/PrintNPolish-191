@@ -23,7 +23,7 @@ const UserSchema = new mongoose.Schema({
   }
 });
 
-UserSchema.static.login = async function (email, password, role, active)
+UserSchema.static.login = async function (email, password, role)
 {
   if(role == 1)
   {
@@ -35,7 +35,7 @@ UserSchema.static.login = async function (email, password, role, active)
     const user = await this.findOne({email});
     if (user)
     {
-      const auth = await bcrypy.compare(password, user.password);
+      const auth = await bcrypt.compare(password, user.password);
       console.log("The valueof auth", auth,password)
       if (auth)
       {

@@ -13,6 +13,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.8.2",
+    "angular-messages": "^1.8.2",
+    "angular-ui-bootstrap": "^2.5.6",
     "bcrypt": "^5.0.1",
     "connect-flash": "^0.1.1",
     "ejs": "^3.1.6",
@@ -26,6 +29,7 @@
     "passport-local": "^1.0.0"
   },
   "devDependencies": {
+    "angular-translate": "^2.19.0",
     "dotenv": "^10.0.0",
     "nodemon": "^2.0.13"
   },

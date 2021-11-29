@@ -92,7 +92,7 @@ app.use('/users', require('./routes/users.js'));
 
 //UPDATE 11/15/21
 //User find function, replace name with your name inside DB
-User.find({ name: 'desmond desboine'}, function (err, docs) {
+User.find({ name: 'Mario'}, function (err, docs) {
   if (err){
       console.log(err);
   }
