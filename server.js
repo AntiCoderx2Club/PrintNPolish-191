@@ -9,6 +9,14 @@ const session = require('express-session')
 //const methodOverride = require('method-override')
 const mongoose = require ('mongoose');
 
+
+//11/29/21 Adding for Appointment System
+var path = require('path');
+var bodyParser = require("body-parser");
+
+
+
+
 //Bootswatch
 const expressLayouts = require('express-ejs-layouts');
 
@@ -30,6 +38,7 @@ const db = require('./config/keys').MongoURI;
 const User = require('./models/User')
 
 
+
 //MongoDB Connection
 mongoose.connect(db, { useNewUrlParser: true , useUnifiedTopology: true})
  .then(() => console.log('MongoDB Connected'))
@@ -38,6 +47,9 @@ mongoose.connect(db, { useNewUrlParser: true , useUnifiedTopology: true})
 
 
 
+//11/29/21 Body Parser
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 
 //Unused as of 11/8/21

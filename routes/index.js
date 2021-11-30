@@ -44,8 +44,9 @@ router.get('/services-lashes', (req, res) => {
 
 
 // app.get appointments
+//11/29/21 TEST
 router.get('/appointments', (req, res) => {
-  res.render('appointments.ejs')
+  res.render('../public/dhtml/appointmentcreate.ejs')
 })
 
 // app.get staff
