@@ -62,7 +62,7 @@
 .Staff_Header {
     left: 256px;
     top: 80px; 
-     position: absolute;
+    position: absolute;
     overflow: visible;
     width: 327px;
     white-space: nowrap;
@@ -112,58 +112,59 @@ p.staff-description {
 /* ///////////////////////////////////////////////////////////////  */
 
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  position: relative;
-  width: 1200px;
-  height: 400px;
-  margin: 240px auto;
-  margin-top: 0px;
+    border: 1px black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 1200px;
+    height: 400px;
+    margin: 240px auto;
+    margin-top: 0px;
 
 }
 
 
 .container .box {
-  position: relative;
-  width: 20%;
-  height: 400px;
-  background: #efe1e1; 
-  float: left;
-  margin: 15px;
-  box-sizing: border-box;
-  overflow: hidden;
-  border-radius: 10px;
+    position: relative;
+    width: 20%;
+    height: 400px;
+    background: #f0dada; 
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 
 
 .container .box .staff {
-  text-align: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #efe1e1;
-  transition: 0.5s;
-  z-index: 1;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f0dada;
+    transition: 0.5s;
+    z-index: 1;
 }
 
 p.staff-name {
-  color: #343333;
-  font-size: 20px;
-  font-family: "Helvetica Neue",
-      Helvetica,
-      Arial,
-      sans-serif;
-  ;
+    text-align: center;
+    color: #343333;
+    font-size: 20px;
+    font-family: "Helvetica Neue",
+        Helvetica,
+        Arial,
+        sans-serif;
+    ;
 }
 
 .container .box .staff img {
