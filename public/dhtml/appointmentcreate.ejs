@@ -13,6 +13,73 @@
     </style>
 </head>
 
+<style>
+    navbar { background-color: #333;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */}
+
+  /* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "adobe-clean", sans-serif;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color:#FF9292;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color:#FF9292;
+  color: black;
+}
+
+/*Changes the background color of the navbar*/
+.navbar {
+  background-color:#FFB4B4;
+}
+
+/*Changes the tab color of each link. i.e: HOME, SERVICES ...*/
+.navbar a {
+  background-color:#FFB4B4;
+  color: black;
+}
+
+.navbar ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+/*Used inline-block to display items horizontally*/
+.navbar li {
+  display: inline-block;
+}
+
+</style>
+
+<div class="navbar">
+    <ul>
+        <li><a class="active" href="/Home_Page">HOME</a></li>
+        <li><a href="/services">SERVICES</a></li>
+        <li><a href="/appointments">APPOINTMENTS</a></li>
+        <li><a href="/staff">STAFF</a></li>
+        <li><a href="/about_us">ABOUT US</a></li>
+        <li><a href="/users/login">LOGIN</a></li>
+    </ul>
+</div>
+</head>
+
+
 
 <script type="text/javascript" charset="utf-8">
     function init() {
