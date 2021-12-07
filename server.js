@@ -52,6 +52,86 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
+//connect to the mongoDB
+var db2 = require('mongoskin').db("mongodb+srv://dbUser:dbpassword@cluster0.xlz4j.mongodb.net/Appointments?retryWrites=true&w=majority", { w: 0});
+    //db2.bind('event');
+
+//create express app, use public folder for static files
+
+app.get('/init', function(req, res){
+    db2.event.insert({
+        text:"My test event A",
+        start_date: new Date(2021,12,1),
+        end_date:   new Date(2021,12,5)
+    });
+    db2.event.insert({
+        text:"One more test event",
+        start_date: new Date(2021,8,3),
+        end_date:   new Date(2021,8,8),
+        color: "#DD8616"
+    });
+
+    /*... skipping similar code for other test events...*/
+
+    res.send("Test events were added to the database")
+});
+
+/*
+app.get('/data', function(req, res){
+    db.event.find().toArray(function(err, data){
+        //set id property for all records
+        for (var i = 0; i < data.length; i++){
+            data[i].id = data[i]._id;
+            delete data[i]["!nativeeditor_status"];
+        }
+        //output response
+        res.send(data);
+    });
+});
+app.post('/data', function(req, res){
+    var data = req.body;
+
+    //get operation type
+    var mode = data["!nativeeditor_status"];
+    //get id of record
+    var sid = data.id;
+    var tid = sid;
+
+    //remove properties which we do not want to save in DB
+    delete data.id;
+    delete data["!nativeeditor_status"];
+
+
+    //output confirmation response
+    function update_response(err, result){
+        if (err)
+            mode = "error";
+        else if (mode == "inserted")
+            tid = data._id;
+
+        res.setHeader("Content-Type","application/json");
+        res.send({action: mode, sid: sid, tid: tid});
+
+    }
+
+    //run db operation
+    if (mode == "updated")
+        db2.event.updateById( sid, data, update_response);
+    else if (mode == "inserted")
+        db2.event.insert(data, update_response);
+    else if (mode == "deleted")
+        db2.event.removeById( sid, update_response);
+    else
+        res.send("Not supported operation");
+});
+
+
+*/
+
+
+
+
+
 //Unused as of 11/8/21
 //const users = []
 
