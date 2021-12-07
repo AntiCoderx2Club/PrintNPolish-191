@@ -2,9 +2,12 @@
     <%= messages.error %>
 <% } %>
 
+
+
 <head>
     <title>Lisa's Nails About</title>
   <link href="/css/layout.css" rel="stylesheet" type="text/css">
+  <link href="/css/about_us.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://bootswatch.com/5/journal/bootstrap.min.css">
   <script src="https://kit.fontawesome.com/9c7d73a643.js" crossorigin="anonymous"></script>
 </head>
@@ -36,6 +39,7 @@
 
 </body>
 
+
 <div class="main-navbar">
   <ul>
       <li><a href="/Home_Page">HOME</a></li>
@@ -46,26 +50,40 @@
       <li><a href="/users/login">LOGIN</a></li>
   </ul>
 </div>
-<br><br><br><br>
 
-<div style="position: absolute; left:100px; top:200px">
-    <h1>About Us</h1>
-    <div style="border: 1px black;">
-        <img src = "/images/image0.jpg" alt 2style="width:200px; height:200px;">        <br>
-
-                <br> width="500" height="600"        At lisas nails...we've offered amazing service for the last 19 years here in Vacaville<br>
-        Lisa has always had a passion for doing nails, and wants to make sure that her clients<br>
-        look as amazing as they can!
-    </div>
+<div>
+    <h3 class="AboutUs_Header"> About Us </h3>
 </div>
 
+<div class="row" style="padding-bottom: 50px; width: 830px; right: 255px;">
+    <!-- First column -->
+    <div class="column">
+        <h6 class="Left_Header"> Who We Are </h6>
+        <p class="services-description">  At Lisa's Nails, we provide excellent manicure and pedicure services. Including custom facials, eyelash extensions, and waxing. </p>
+        <br>
+        <h6 class="Left_Header"> Business Hours</h6>
+        <p class="services-description">  
+            Sunday: 10:00AM - 6:00PM <br>
+            Monday - Friday: 9:00AM - 7:00PM <br>
+            Saturday: 9:00AM - 6:00PM 
+        </p>
+        <br>
+        <h6 class="Left_Header"> Contact Us </h6>
+         <p class="contact-description">  
+            Phone: (707) 451-2833 <br>
+            Phone: (707) 447-2649 
+        </p>
+    </div>
+    <!-- Second Column -->
+    <div class="column">
+        <img class="Lisa_img" src="/images/LisaN.jpg" alt="Lisa Nguyen(the owner) performing a manicure on a client"/>
+        <img class="Lisa_img" src="/images/LisaNails-outside.jpg" alt="outside picture of Lisa's Nails Salon."/>
+        <br> <br>
+        <h6 class="Location_Header"> Location </h6>
+        <iframe class="GoogleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3129.2128894107937!2d-121.99687078495197!3d38.34405438697532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808517e3bc4e669b%3A0x523fe582c4128d48!2sLisa&#39;s%20Nails!5e0!3m2!1sen!2sus!4v1632870596532!5m2!1sen!2sus"
+        allowfullscreen="" 
+        loading="lazy">
 
-<div style="position: absolute; left:900px; top: 200px;">
-    <h1>Location</h1>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3129.2108481919076!2d-121.99663339850751!3d38.344101636723245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808517e3bc4e669b%3A0x523fe582c4128d48!2sLisa&#39;s%20Nails!5e0!3m2!1sen!2sus!4v1638418668931!5m2!1sen!2sus" 
-    width="400" 
-    height="300" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy"></iframe>
+    </div>
+    
 </div>
