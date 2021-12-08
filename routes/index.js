@@ -44,8 +44,14 @@ router.get('/services-lashes', (req, res) => {
 
 
 // app.get appointments
+//11/29/21 TEST
 router.get('/appointments', (req, res) => {
   res.render('appointments.ejs')
+  //res.render('../public/dhtml/appointmentcreate.ejs')
+})
+
+router.get('/appointmentcreate', (req, res)=> {
+  res.render('../public/dhtml/appointmentcreate.ejs')
 })
 
 // app.get staff
@@ -67,6 +73,12 @@ router.get('/dashboard', ensureAuthenticated, (req, res) => {
         user: req.user 
     })
  });
+ 
+ router.get('/dashboard', ensureAuthenticated, (req, res) => {
+  res.render('dashboardadmin.ejs', { 
+      user: req.role 
+  })
+});
 
 
  module.exports = router;

@@ -5,7 +5,8 @@
 <head>
     <title> Lisa's Nails Appointments</title>
   <link href="/css/layout.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://bootswatch.com/5/journal/bootstrap.min.css">
+  <link rel="stylesheet" href="css/appointment.css">
+  <!-- <link rel="stylesheet" href="https://bootswatch.com/5/journal/bootstrap.min.css"> -->
   <script src="https://kit.fontawesome.com/9c7d73a643.js" crossorigin="anonymous"></script>
 </head>
 
@@ -35,17 +36,39 @@
     </style> 
 </body>
 
-<div class="main-navbar">
-  <ul>
-<li><a href="/Home_Page">HOME</a></li>
-    <li><a href="/services">SERVICES</a></li>
-    <li><a class="active" href="/appointments">APPOINTMENTS</a></li>
-    <li><a href="/staff">STAFF</a></li>
-    <li><a href="/about_us">ABOUT US</a></li>
-      <li><a href="/users/login">LOGIN</a></li>
-  </ul>
+<div class="navbar">
+        
+    <ul>
+        <li><a href="/Home_Page">HOME</a></li>
+        <li><a href="/services">SERVICES</a></li>
+        <li><a class="active" href="/appointments">APPOINTMENTS</a></li>
+        <li><a href="/staff">STAFF</a></li>
+        <li><a href="/about_us">ABOUT US</a></li>
+        <li><a href="/users/login">LOGIN</a></li>
+    </ul>
 </div>
-<br><br><br><br>
+
+
+<div class="header-and-description">
+    <h3 class="Services_Header">Appointments</h3>
+    <br>
+    <p class="services-description"> Appointments must be booked one at a time. Appointments cannot be canceled within two hours of scheduled time. <br>  Masks are required upon entry. For any immediate changes, questions, or concerns, please call 707-451-2833 </p>
+</div>
+
 <div class="container">
-    <h1> APPOINTMENTS code to be added </h1>
-</div>  
+    <p> Ready to make an Appointment? Click on the button below </p>
+
+    <div class="my_button">
+    <form>
+      <a href ='/appointmentcreate'> Create Appointment</a>
+    </form>
+  </div>
+</div>
+
+<!-- <div class="Instructions">
+  <p>Please read these instructions before making an appointment.</p>
+</div> -->
+
+
+
+</div>

@@ -10,6 +10,10 @@ module.exports = {
       if (!req.isAuthenticated()) {
         return next();
       }
+
+      //if (role === 1) {
+        //res.redirect('/dashboardadmin')
+      //}
       res.redirect('/dashboard');      
     }
   };

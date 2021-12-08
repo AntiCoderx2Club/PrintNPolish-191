@@ -1,0 +1,121 @@
+<!doctype html>
+<head>
+    <title> Lisa's Nails Appointments</title>
+    <meta content="text/html; charset=utf-8">
+    <script src="dhtml/dhtmlxscheduler.js" ></script>
+    <link rel="stylesheet" href="dhtml/dhtmlxscheduler.css">
+    <style type="text/css" media="screen">
+        html, body{
+            margin:0px;
+            padding:0px;
+            height:100%;
+            overflow:hidden;
+        }  
+    </style>
+</head>
+
+<style>
+    navbar { background-color: #333;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */}
+
+  /* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "adobe-clean", sans-serif;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color:#FF9292;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color:#FF9292;
+  color: black;
+}
+
+/*Changes the background color of the navbar*/
+.navbar {
+  background-color:#FFB4B4;
+}
+
+/*Changes the tab color of each link. i.e: HOME, SERVICES ...*/
+.navbar a {
+  background-color:#FFB4B4;
+  color: black;
+}
+
+.navbar ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+/*Used inline-block to display items horizontally*/
+.navbar li {
+  display: inline-block;
+}
+
+</style>
+
+<div class="navbar">
+    <ul>
+        <li><a href="/Home_Page">HOME</a></li>
+        <li><a href="/services">SERVICES</a></li>
+        <li><a class="active" href="/appointments">APPOINTMENTS</a></li>
+        <li><a href="/staff">STAFF</a></li>
+        <li><a href="/about_us">ABOUT US</a></li>
+        <li><a href="/users/login">LOGIN</a></li>
+    </ul>
+</div>
+</head>
+
+
+
+<script type="text/javascript" charset="utf-8">
+    function init() {
+        scheduler.config.xml_date="%Y-%m-%d %H:%i";
+        scheduler.init('scheduler_here',new Date(2021,12,1),"month");
+        //
+        scheduler.templates.xml_date = function(value){ return new Date(value); };
+        scheduler.load("/data", "json");
+        
+
+var dp = new dataProcessor("/data");
+dp.init(scheduler);
+dp.setTransactionMode("POST", false);
+
+    }
+</script>
+
+
+
+
+
+<body onload="init();">
+    <div id="scheduler_here" class="dhx_cal_container" style='width:100%; height:100%;'>
+        <div class="dhx_cal_navline">
+            <div class="dhx_cal_prev_button">&nbsp;</div>
+            <div class="dhx_cal_next_button">&nbsp;</div>
+            <div class="dhx_cal_today_button"></div>
+            <div class="dhx_cal_date"></div>
+            <div class="dhx_cal_tab" name="day_tab"></div>
+            <div class="dhx_cal_tab" name="week_tab"></div>
+            <div class="dhx_cal_tab" name="month_tab"></div>
+        </div>
+        <div class="dhx_cal_header">
+        </div>
+        <div class="dhx_cal_data">
+        </div>
+    </div>
+</body>

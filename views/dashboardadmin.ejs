@@ -1,0 +1,50 @@
+<!-- Dashboard Page == Login Successful/Index page-->
+
+<head>
+    <link href="/css/layout.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://bootswatch.com/5/journal/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/9c7d73a643.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+      <style>
+  
+          body {
+              /* CSS Attribute for background image */
+              position: fixed;
+              height: 100vh;
+              width: 100%;
+              /* display: flex; */
+              align-items: center;
+              justify-content: center;
+  
+              content: "";
+              background-image: url("/images/LisaNail-BG_opacity30.png");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-attachment: scroll;
+              position: absolute;
+              top: 0px;
+              right: 0px;
+              bottom: 0px;
+              left: 0px;
+          }
+      </style> 
+  </body>
+  
+  <div class="main-navbar">
+    <ul>
+        <li><a href="/Home_Page">HOME</a></li>
+        <li><a href="/services">SERVICES</a></li>
+        <li><a href="/appointments">APPOINTMENTS</a></li>
+        <li><a href="/staff">STAFF</a></li>
+        <li><a href="/about_us">ABOUT US</a></li>
+        <li><a class="active" href="/users/login">LOGIN</a></li>
+    </ul>
+  </div>
+  <br><br><br><br>
+  
+  
+  <p class="lead mb-3">Welcome <%= user.name %></p>
+  
+  <a href="/users/logout" class="btn btn-secondary">Logout</a>
