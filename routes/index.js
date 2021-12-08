@@ -73,6 +73,12 @@ router.get('/dashboard', ensureAuthenticated, (req, res) => {
         user: req.user 
     })
  });
+ 
+ router.get('/dashboard', ensureAuthenticated, (req, res) => {
+  res.render('dashboardadmin.ejs', { 
+      user: req.role 
+  })
+});
 
 
  module.exports = router;
