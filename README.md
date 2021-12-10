@@ -21,7 +21,7 @@
 - [Print and Polish High-Fidelity Demo](https://xd.adobe.com/view/bf39d4ea-35a7-472f-a6e6-fb0c351da254-ea6a/?fullscreen&hints=off)
 
 **Project Showcase Website:**
-- [Print and Polish Show Case Website](https://anticoderx2club.github.io)
+- [Print and Polish Showcase Website](https://anticoderx2club.github.io)
 
 **Project Final Presentation Video:**
 - [Print and Polish Presentation Video](https://youtu.be/LcDx3qdhoZ0)
