@@ -24,7 +24,4 @@
 - [Print and Polish Show Case Website](https://anticoderx2club.github.io)
 
 **Project Final Presentation Video:**
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LcDx3qdhoZ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-
+- [Print and Polish Presentation Video](https://youtu.be/LcDx3qdhoZ0)
